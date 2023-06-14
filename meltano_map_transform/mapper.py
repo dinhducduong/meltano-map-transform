@@ -23,11 +23,11 @@ class StreamTransform(InlineMapper):
                     {
                         "type": ["object", "string", "null"],
                         "properties": {
-                            "__filter__": {"type": ["string", "null"]},
-                            "__source__": {"type": ["string", "null"]},
-                            "__alias__": {"type": ["string", "null"]},
+                            "__filter__": {"type": ["object", "string", "null"]},
+                            "__source__": {"type": ["object", "string", "null"]},
+                            "__alias__": {"type": ["object", "string", "null"]},
                             "__else__": {
-                                "type": ["string", "null"],
+                                "type": ["object", "string", "null"],
                                 "enum": [None, "__NULL__"],
                             },
                             "__key_properties__": {
@@ -35,7 +35,7 @@ class StreamTransform(InlineMapper):
                                 "items": {"type": "string"},
                             },
                         },
-                        "additionalProperties": {"type": ["string", "null"]},
+                        "additionalProperties": {"type": ["object", "string", "null"]},
                     }
                 )
             ),
